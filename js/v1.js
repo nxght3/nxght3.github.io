@@ -1,11 +1,17 @@
-for (let index = 1; index < 17; index++) {
-    const div = document.createElement('div');
-    div.className = 'card';
-    div.innerHTML = index;
-    div.addEventListener('click',flipp)
-    document.getElementById('card-deck').appendChild(div);
+const numberCards = 16
+
+let p = document.querySelector('.deck')
+for (let index = 0; index < numberCards; index++) {
+        let c = document.createElement('div')
+        c.innerHTML = index % 2 + 1
+        c.className="card"
+        c.addEventListener('click',flipp)
+        p.appendChild(c)
 }
 
 function flipp(event){
-    this.classList.toggle("flipped")
+    this.classList.toggle('flipped')
 }
+
+
+
