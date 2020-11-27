@@ -44,8 +44,13 @@ function openCard(c){
         openedCards.push(c)
         if(openedCards.length == 2){
             if(openedCards[0].type == openedCards[1].type){
-                openedCards.pop().classList.toggle('found')
-                openedCards.pop().classList.toggle('found')
+                window.setTimeout(
+                    ()=>{
+                        openedCards.pop().classList.toggle('found')
+                        openedCards.pop().classList.toggle('found')
+                    },
+                    500
+                )
             }
             else{
                 window.setTimeout(

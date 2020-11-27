@@ -1,13 +1,26 @@
+body {
+    /* colors/fonts */
+    background-color: rgb(59, 59, 59);
+    font-family: monospace;
+    font-size: 3.5vw;
+    font-weight: bold;
+}
 .card{
     float: left;
     width: 23%;
     margin: 1%;
     height: 24vw;
-    background-color:rgb(129, 41, 41);
+    background-color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 24vw;
+    border-radius: 10%;
 }
+
 .flipped{
-    background-color:blue;
+    background-color:rgb(74, 80, 71);
+    box-shadow: 5px 5px 5px rgb(102, 0, 0);
 }
 .found{
-    background-color: black;
+    opacity: 0;
 }
